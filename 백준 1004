@@ -1,0 +1,11 @@
+for _ in range(int(input())):
+    x1, y1, x2, y2 = tuple(map(int,input().split()))
+    count = 0
+    for _ in range(int(input())):
+        cx, cy, r = tuple(map(int,input().split()))
+        s = (x1-cx)**2 + (y1-cy)**2
+        e = (x2-cx)**2 + (y2-cy)**2
+        if ( r**2 - s)*(r**2-e) < 0:
+            count = count + 1
+        else: count=count
+    print(count)
