@@ -7,5 +7,5 @@ for _ in range(int(input())):
         e = (x2-cx)**2 + (y2-cy)**2
         if ( r**2 - s)*(r**2-e) < 0:
             count = count + 1
-        else: count=count
+        else: pass
     print(count)
