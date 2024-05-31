@@ -1,0 +1,12 @@
+def countfib(i,n):
+    if n==0:
+        return 1-i
+    elif n==1:
+        return i
+    else:
+        return countfib(i,n-1)+countfib(i,n-2)
+        
+
+for _ in range(int(input())):
+    n=int(input())
+    print(countfib(0,n),countfib(1,n))
